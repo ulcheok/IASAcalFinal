@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IASA 학평 계산기</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <form id="gpa-form">
+    <h1>IASA 학평 계산기</h1>
+
+    <!-- 자연계 과목 (기본 체크됨) -->
+    <div class="subject-row"><input type="checkbox" class="include-checkbox" checked><label>수I</label><select class="grade"><option>A+</option><option>A</option><option>A-</option><option>B+</option><option>B</option><option>B-</option></select></div>
+    <div class="subject-row"><input type="checkbox" class="include-checkbox" checked><label>수II</label><select class="grade"><option>A+</option><option>A</option><option>A-</option><option>B+</option><option>B</option><option>B-</option></select></div>
+    <div class="subject-row"><input type="checkbox" class="include-checkbox" checked><label>물리</label><select class="grade"><option>A+</option><option>A</option><option>A-</option><option>B+</option><option>B</option><option>B-</option></select></div>
+    <div class="subject-row"><input type="checkbox" class="include-checkbox" checked><label>화학</label><select class="grade"><option>A+</option><option>A</option><option>A-</option><option>B+</option><option>B</option><option>B-</option></select></div>
+    <div class="subject-row"><input type="checkbox" class="include-checkbox" checked><label>생명</label><select class="grade"><option>A+</option><option>A</option><option>A-</option><option>B+</option><option>B</option><option>B-</option></select></div>
+    <div class="subject-row"><input type="checkbox" class="include-checkbox" checked><label>지학</label><select class="grade"><option>A+</option><option>A</option><option>A-</option><option>B+</option><option>B</option><option>B-</option></select></div>
+
+    <!-- 인문/기타 과목 (기본 체크 해제) -->
+    <div class="subject-row"><input type="checkbox" class="include-checkbox"><label>정보</label><select class="grade"><option>A+</option><option>A</option><option>A-</option><option>B+</option><option>B</option><option>B-</option></select></div>
+    <div class="subject-row"><input type="checkbox" class="include-checkbox"><label>국어</label><select class="grade"><option>A+</option><option>A</option><option>A-</option><option>B+</option><option>B</option><option>B-</option></select></div>
+    <div class="subject-row"><input type="checkbox" class="include-checkbox"><label>한국사</label><select class="grade"><option>A+</option><option>A</option><option>A-</option><option>B+</option><option>B</option><option>B-</option></select></div>
+    <div class="subject-row"><input type="checkbox" class="include-checkbox"><label>영어</label><select class="grade"><option>A+</option><option>A</option><option>A-</option><option>B+</option><option>B</option><option>B-</option></select></div>
+    <div class="subject-row"><input type="checkbox" class="include-checkbox"><label>지재일</label><select class="grade"><option>A+</option><option>A</option><option>A-</option><option>B+</option><option>B</option><option>B-</option></select></div>
+    <div class="subject-row"><input type="checkbox" class="include-checkbox"><label>음악</label><select class="grade"><option>A+</option><option>A</option><option>A-</option><option>B+</option><option>B</option><option>B-</option></select></div>
+    <div class="subject-row"><input type="checkbox" class="include-checkbox"><label>체육</label><select class="grade"><option>A+</option><option>A</option><option>A-</option><option>B+</option><option>B</option><option>B-</option></select></div>
+
+    <!-- 결과 -->
+    <div class="results">
+      <p>IASA 학평: <span id="gpa">0.00</span></p>
+    </div>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+/* 전체 배경과 정렬 */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+
+  background-image: url('bg3.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* 폼 컨테이너 */
+#gpa-form {
+  background: rgba(255, 255, 255, 1);
+  padding: 1.2rem 1.5rem;            /* 세로 패딩 축소 */
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  width: 320px;                     /* 조금 좁게 */
+}
+
+/* 제목 */
+#gpa-form h1 {
+  text-align: center;
+  margin-bottom: 1rem;              /* 제목 아래 여백 축소 */
+  font-size: 1.2rem;
+}
+
+/* 과목 행 */
+.subject-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.4rem;            /* 항목 간 간격 축소 */
+  padding: 0.2rem 0.3rem;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+/* 체크박스 */
+.subject-row input[type="checkbox"] {
+  margin-right: 0.4rem;
+}
+
+/* 라벨과 셀렉트 */
+.subject-row label {
+  flex: 1;
+  font-size: 0.92rem;
+}
+.subject-row select {
+  flex: 1;
+  margin-left: 0.4rem;
+  padding: 0.2rem;
+  font-size: 0.92rem;
+}
+
+/* 흐려진 과목 행 */
+.subject-row.inactive {
+  background-color: rgba(200, 200, 200, 0.3);
+  opacity: 0.6;
+}
+
+/* 결과 영역 */
+.results {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.results span {
+  color: #007bff;
+}
